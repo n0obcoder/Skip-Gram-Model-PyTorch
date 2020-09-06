@@ -5,7 +5,7 @@ PyTorch implementation of the word2vec (skip-gram model) and visualization of th
 
 My TensorFlow implemntation of Skip-Gram Model can be found [here](https://github.com/n0obcoder/Skip-Gram_Model-TensorFlow).
 
-# Requirements
+### Requirements
 * torch >= 1.4    
 * numpy >= 1.18      
 * matplotlib       
@@ -14,7 +14,7 @@ My TensorFlow implemntation of Skip-Gram Model can be found [here](https://githu
 * gensim
 
 
-# Training
+### Training
 ```
 python main.py
 ```
@@ -25,7 +25,7 @@ tensorboard --logdir <PATH_TO_TENSORBOARD_EVENTS_FILE>
 ```
 <strong>NOTE:</strong> By default, <strong>PATH_TO_TENSORBOARD_EVENTS_FILE</strong> is set to <strong>SUMMARY_DIR</strong> in config.py
 
-# Testing
+### Testing
 ```
 python test.py
 ```
