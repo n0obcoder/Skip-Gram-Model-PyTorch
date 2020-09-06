@@ -35,10 +35,10 @@ elif DATA_SOURCE=='gensim':
     FRACTION_DATA         = 1
     SUBSAMPLING           = True
     SAMPLING_RATE         = 0.001
-    NEGATIVE_SAMPLES      = 10 # set it to 0 if you don't want to use negative samplings  
+    NEGATIVE_SAMPLES      = 20 # set it to 0 if you don't want to use negative samplings  
 
-    EMBEDDING_DIM         = 64
-    LR                    = 0.0011
+    EMBEDDING_DIM         = 100
+    LR                    = 0.001
 
     if FRACTION_DATA == 1:
         TEST_WORDS            = ['india', 'computer', 'gold', 'football', 'cars', 'war', 'apple', 'music', 'helicopter']
