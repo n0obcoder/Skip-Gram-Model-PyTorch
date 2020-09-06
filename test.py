@@ -2,7 +2,7 @@ import torch, sys, pdb, os
 import numpy as np
 from model import Word2Vec_neg_sampling
 from utils_modified import nearest_word
-from config import EMBEDDING_DIM, MODEL_DIR
+from config import EMBEDDING_DIM, MODEL_DIR, DEVICE
 
 def q():
     sys.exit()
@@ -26,14 +26,11 @@ def print_nearest_words(model, test_words, word_to_ix, ix_to_word, top = 5):
 
 
 if __name__ == '__main__':
-    device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
-    print('device: ', device)
-
     ckpt = torch.load(os.path.join(MODEL_DIR, 'model0.pth'))
     ix_to_word = ckpt['ix_to_word']
     word_to_ix = ckpt['word_to_ix']
 
-    model = Word2Vec_neg_sampling(EMBEDDING_DIM, len(ix_to_word), device).to(device)
+    model = Word2Vec_neg_sampling(EMBEDDING_DIM, len(ix_to_word), DEVICE).to(DEVICE)
     model.load_state_dict(ckpt['model_state_dict'])
 
     EMBEDDINGS = model.embeddings_input.weight.data.cpu()
