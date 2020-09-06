@@ -4,6 +4,11 @@ import sys
 def q():
     sys.exit()
 
+# define a function to count the total number of trainable parameters
+def count_parameters(model): 
+    num_parameters = sum(p.numel() for p in model.parameters() if p.requires_grad)
+    return num_parameters/1e6 # in terms of millions
+
 # TEST
 def nearest_word(inp, emb, top = 5, debug = False):
     euclidean_dis = np.linalg.norm(inp - emb, axis = 1)    
