@@ -32,13 +32,13 @@ python test.py
 
 ### Inference
 
-| war      | india     | crime       | guitar  | movies  | desert    | physics      | religion  | football     | computer   |  
-| -------- | --------- | ------------| ------- | ------- | --------- | ------------ | --------- | ------------ | ---------- |
-| invasion | provinces | will        | bass    | movie   | shore     | mathematics  | judaism   | baseball     | digital    |
-| soviet   | pakistan  | prosecution | drum    | albums  | hilly     | mathematical | islam     | championship | computers  |
-| troop    | mainland  | accusations | solo    | songs   | plateau   | chemistry    | religions | basketball   | software   |
-| army     | asian     | provoke     | quartet | cartoon | basin     | theoretical  | religious | coach        | electronic |
-| ally     | colonial  | prosecute   | vocals  | animate | highlands | analysis     | jewish    | wrestler     | interface  |
+| war      | india   | crime     | guitar | movies  | desert   | physics      | religion     | football | computer    |  
+| -------- | ------- | --------- | ------ | ------- | -------- | ------------ | ------------ | -------- | ----------- |
+| fight    | europe  | despite   | band   | movie   | region   | theory       |   religious  | team     | program     |
+| battle   | central | help      | play   | series  | along    | mathematics  | christian    | win      | systems     |
+| army     | western | seek      | record | show    | western  | mathematical | regard       | sport    | available   |
+| force    | indian  | challenge | piece  | film    | southern | study        | tradition    | club     | design      |
+| ally     | part    | fail      | star   | feature | plain    | science      | christianity | league   | information |
 
 ### Blog-Post
 Check out my blog post on <strong>word2vec</strong> [here](https://medium.com/datadriveninvestor/word2vec-skip-gram-model-explained-383fa6ddc4ae "word2vec Explained on Medium.com").
