@@ -33,7 +33,7 @@ elif DATA_SOURCE=='gensim':
     NUM_EPOCHS            = 10
 
     CONTEXT_SIZE          = 5
-    FRACTION_DATA         = 0.1
+    FRACTION_DATA         = 1
     SUBSAMPLING           = True
     SAMPLING_RATE         = 0.001
     NEGATIVE_SAMPLES      = 10 # set it to 0 if you don't want to use negative samplings  
